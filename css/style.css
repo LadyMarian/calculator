@@ -1,0 +1,67 @@
+:root {
+    --ff-body: 'Audiowide', cursive;
+}
+
+body {
+    display: flex;
+}
+
+.container {
+    display: grid;
+    width: 500px;
+    background: grey;
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: .5rem;
+    margin: auto;
+}
+
+.input {
+    grid-column: 1 / -1;
+    font-size: 40px;
+    margin-bottom: .5rem;
+    background-color: #A7A8A8;
+    border: 2px solid #F3F3F3;
+    text-align: right;
+    padding: .5rem;
+    font-family: var(--ff-body);
+}
+
+.btn {
+    font-size: 30px;
+    padding: .5rem;
+    font-family: var(--ff-body);
+}
+
+.btn-number {
+    background-color: #59989E;
+    border: 2px solid #8BC0C5;
+}
+
+.btn-number:hover {background-color: #8BC0C5;}
+
+.btn-number-0 {
+    grid-column: span 2; 
+}
+
+.btn-calc {
+    background-color: #FFC18F;
+    border: 2px solid #FFD5B3;
+    grid-row: span 3;
+}
+
+.btn-calc:hover {background-color: #FFD5B3;}
+
+.btn-clear {
+    background-color: #FFF18F;
+    border: 2px solid #FFF6B5;
+}
+
+.btn-clear:hover {background-color: #FFF6B5;}
+
+.btn-symbol {
+    background-color: #A1DF7D;
+    border: 2px solid #C0ECA6;
+}
+
+.btn-symbol:hover {background-color: #C0ECA6;}
